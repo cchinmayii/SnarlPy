@@ -35,7 +35,7 @@ def getEdgeLinkageOperator(graph_sets):
 
     P = np.dot(np.dot(cyc_mat_inv[0].T, lk_mat), cyc_mat_inv[1])
 
-    return P, lk_mat
+    return P, lk_mat, (len(cyc_nx_base[0]), len(cyc_nx_base[1]))
 
 
 def cuttingEdgeAlgorithm(cut_graph, ref_graph):
