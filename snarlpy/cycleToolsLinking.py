@@ -598,6 +598,7 @@ class linkedCycles_extraTools(linkedCycles_tools):
 
             t1, t2 = t
             t12 = np.cross(*t)
+            # display(p)
             p12 = p[0]-p[1]
 
             lk += nquad(

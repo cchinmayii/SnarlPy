@@ -33,7 +33,8 @@ def createLabelCatenation(num_periods):
     D = kcd.initialize_dual_from_catenation(dual_type=nx_type, num_periods=num_periods)
 
     D = set_print_labels(D)
-
+    print('hello')
+    # display(D)
     return D
 
 def createHexagonal(num_periods=2):
